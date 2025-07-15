@@ -71,7 +71,7 @@ namespace Microsoft.WebAssembly.Build.Tasks
 
             sb.AppendLine("\t</PropertyGroup>");
 
-            sb.AppendLine("\t<ItemGroup>");
+            sb.AppendLine("\t<ItemGroup>");  //Append items to the ItemGroup.
             foreach (ITaskItem2 item in Items)
             {
                 string value = item.EvaluatedIncludeEscaped;
